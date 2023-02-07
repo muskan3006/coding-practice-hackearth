@@ -16,8 +16,7 @@ syntax: glob
 !.idea/runConfigurations/
 .flattened-pom.xml
 *.iml
-.bsp/sbt.json
-.bsp
+
 # building
 target
 build

@@ -12,14 +12,14 @@ object Sorting extends App {
 
     def selectionsort(arr: Array[Int]) = {
         (0 until arr.length - 1).foreach(i => {
-            var minindex = i
+            var midindex = i
             (i + 1 until arr.length).foreach(j => {
-                if (arr(minindex) > arr(j))
-                    minindex = j
+                if (arr(midindex) > arr(j))
+                    midindex = j
             })
             val temp = arr(i)
-            arr(i) = arr(minindex)
-            arr(minindex) = temp
+            arr(i) = arr(midindex)
+            arr(midindex) = temp
         })
         arr
     }

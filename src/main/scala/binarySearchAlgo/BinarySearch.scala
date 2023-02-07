@@ -3,6 +3,10 @@ package binarySearchAlgo
 import scala.annotation.tailrec
 import scala.util.control.Breaks.{break, breakable}
 
+//Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
+//
+//You must write an algorithm with O(log n) runtime complexity.
+
 object BinarySearch {
     def recursivesearch(nums: Array[Int], target: Int): Int = {
         val lowerBound = 0
@@ -22,8 +26,8 @@ object BinarySearch {
         binarysearh(lowerBound, upperBound, (lowerBound + upperBound)/2, nums, target)
     }
 
-    def binarySearch(nums : Array[Int], target : Int): Int ={
-        def calculateMiddle(lower : Int , upper : Int): Int ={
+    def binarySearch(nums : Array[Int], target : Int) ={
+        def calculateMiddle(lower : Int , upper : Int) ={
             (lower + upper)/2
         }
         var lowerBound = 0
